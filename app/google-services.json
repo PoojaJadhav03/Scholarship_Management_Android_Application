@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "894436975620",
+    "firebase_url": "https://scholor-alert-project.firebaseio.com",
+    "project_id": "scholor-alert-project",
+    "storage_bucket": "scholor-alert-project.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:894436975620:android:2680b0d73a18672c38c151",
+        "android_client_info": {
+          "package_name": "com.example.scholor_alert_project"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "894436975620-jd61tsac860d8v3uce8nalbkqrs5no99.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDAsJEHY9erirFROfXgXKs083LGA1YQkrY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "894436975620-jd61tsac860d8v3uce8nalbkqrs5no99.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

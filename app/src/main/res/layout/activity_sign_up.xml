@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SignUp">
+
+    <RelativeLayout
+        android:id="@+id/statme"
+        android:layout_width="405dp"
+        android:layout_height="71dp"
+        android:layout_marginTop="4dp"
+        android:scaleType="centerCrop"
+        android:background="@drawable/ic_upper_dkblue"
+
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" >
+
+        <ImageView
+            android:id="@+id/btn_back_signup"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginEnd="363dp"
+            android:layout_marginRight="363dp"
+            android:layout_marginBottom="17dp"
+            android:src="@drawable/ic_back"
+            />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:gravity="center_vertical"
+        android:orientation="vertical"
+        android:paddingStart="32dp"
+        android:paddingEnd="32dp"
+        app:layout_constraintBottom_toTopOf="@id/imagview2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/muli_black"
+
+            android:text="Stay Connected"
+            android:textColor="@color/colorPrimaryText"
+            style="@style/TextAppearance.AppCompat.Title"/>
+
+        <TextView
+            android:text="Enter Your mail and Password to get access to your account"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/muli_semibold"
+
+            android:textColor="@color/colorPrimaryText"
+            style="@style/TextAppearance.AppCompat.Body1"
+            android:layout_marginTop="8dp"
+            android:maxEms="20"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/signUp_userid"
+            android:layout_marginTop="32dp"
+            android:fontFamily="@font/muli_semibold"
+
+            android:background="@drawable/edit_text_bg"
+            android:ems="10"
+            android:hint="Student ID"
+            android:inputType="text"
+            android:textSize="16sp"/>
+
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/etEmailAddress"
+            android:layout_marginTop="13dp"
+            android:fontFamily="@font/muli_semibold"
+
+            android:background="@drawable/edit_text_bg"
+            android:ems="10"
+            android:hint="Email"
+            android:inputType="textEmailAddress"
+            android:textSize="16sp"
+            />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/etPassword"
+            android:fontFamily="@font/muli_semibold"
+
+            android:layout_marginTop="16dp"
+            android:background="@drawable/edit_text_bg"
+            android:ems="10"
+            android:hint="Password"
+            android:inputType="textPassword"
+            android:textSize="16sp"
+            />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/etConfirmPassword"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/edit_text_bg"
+            android:ems="10"
+            android:fontFamily="@font/muli_semibold"
+
+            android:hint="Confirm Password"
+            android:inputType="textPassword"
+            android:textSize="16sp"
+            />
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/signup_phone"
+            android:fontFamily="@font/muli_semibold"
+
+            android:layout_marginTop="16dp"
+            android:background="@drawable/edit_text_bg"
+            android:ems="10"
+            android:hint="Phone No"
+            android:inputType="text"
+            android:textSize="16sp"
+            />
+
+
+        <Button
+            android:id="@+id/Student_SignUp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:fontFamily="@font/muli_semibold"
+
+            android:background="@color/buttonColor"
+            android:minHeight="28dp"
+            android:padding="12dp"
+            android:text="Sign Up"
+            android:textColor="#FFFFFF">
+
+        </Button>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/text_goto_Login"
+            android:layout_marginTop="33dp"
+            android:fontFamily="@font/muli_semibold"
+
+            android:text="Already have an account?"
+            android:textAlignment="center"
+            android:textColor="@color/colorPrimaryText"
+            android:gravity="center_horizontal" />
+
+
+    </LinearLayout>
+
+
+    <ImageView
+        android:id="@+id/imagview2"
+        android:layout_width="415dp"
+        android:layout_height="107dp"
+        android:layout_marginBottom="4dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/ic_lower_darkblue"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

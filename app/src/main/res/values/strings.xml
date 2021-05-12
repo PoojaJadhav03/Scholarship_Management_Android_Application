@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Scholor_Alert_Project</string>
+    <string name="open">open</string>
+    <string name="close">close</string>
+    <string name="title_activity_student">StudentActivity</string>
+    <string name="tab_text_1">Eligible Schemes</string>
+    <string name="tab_text_2">All Schemes</string>
+</resources>

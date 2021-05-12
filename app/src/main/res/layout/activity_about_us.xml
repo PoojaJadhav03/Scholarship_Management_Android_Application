@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AboutUs">
+
+
+    <RelativeLayout
+        android:id="@+id/statme"
+        android:layout_width="431dp"
+        android:layout_height="251dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginBottom="274dp"
+        android:background="@drawable/ic_upper_dkblue"
+
+        android:scaleType="centerCrop"
+        app:layout_constraintBottom_toTopOf="@+id/textView7"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/btn_back_psignup"
+            android:layout_width="78dp"
+            android:layout_height="58dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginEnd="340dp"
+            android:layout_marginRight="340dp"
+            android:layout_marginBottom="62dp"
+            android:src="@drawable/ic_back" />
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/imageView9"
+        android:layout_width="400dp"
+        android:layout_height="150dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.488"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.302"
+        app:srcCompat="@drawable/tryme3" />
+
+    <TextView
+        android:id="@+id/textView7"
+        android:layout_width="398dp"
+        android:layout_height="247dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginBottom="167dp"
+        android:text="We have proposed a system through which our application can solve most of these issues. It makes a student capable enough to know exact information of a scholarship along with all details. It also makes the makes the process much simpler.Also Provider can add different schemes and student can apply for  particular schemes , our project name is “Scholarship Alert ”."
+        android:textColor="#3949AB"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.473"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/statme" />
+
+    <ImageView
+
+        android:id="@+id/imagview2"
+        android:layout_width="415dp"
+        android:layout_height="107dp"
+        android:layout_marginBottom="4dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/ic_lower_darkblue"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

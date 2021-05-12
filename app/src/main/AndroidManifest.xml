@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.scholor_alert_project">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".AboutUs"></activity>
+        <activity android:name=".Provider_Profile" />
+        <activity android:name=".Admin_SignUp" />
+        <activity android:name=".Admin_Login" />
+        <activity android:name=".Provider_Login" />
+        <activity android:name=".Provider_SignUp" />
+        <activity android:name=".Splash_Screen">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".StartPage"
+            android:parentActivityName=".Splash_Screen"/>
+        <activity android:name=".SecondPage"
+            android:parentActivityName=".StartPage"/>
+        <activity android:name=".Login"
+            android:parentActivityName=".StartPage"/>
+        <activity android:name=".SignUp" />
+        <activity android:name=".Student_Profile" />
+        <activity android:name=".StudentActivity" />
+        <activity android:name=".Add_Scheme" />
+        <activity android:name=".add_scheme2" />
+        <activity android:name=".Display_scheme_stud" />
+        <activity android:name=".DisplaySingleScheme" />
+        <activity android:name=".MainActivity" />
+        <activity android:name=".AskPermission" />
+        <activity android:name=".ProviderList" />
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+    </application>
+
+</manifest>

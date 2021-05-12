@@ -1,0 +1,2 @@
+include ':app'
+rootProject.name = "Scholor_Alert_Project"

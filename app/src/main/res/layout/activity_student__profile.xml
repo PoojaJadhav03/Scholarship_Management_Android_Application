@@ -1,0 +1,282 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_margin="15dp"
+    android:layout_height="match_parent"
+    tools:context=".Student_Profile">
+
+    <RelativeLayout
+        android:id="@+id/statme"
+        android:layout_width="405dp"
+        android:layout_height="71dp"
+        android:layout_marginTop="4dp"
+        android:scaleType="centerCrop"
+        android:background="@drawable/ic_upper_dkblue"
+
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" >
+
+        <ImageView
+            android:id="@+id/studprofile"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginEnd="363dp"
+            android:layout_marginRight="363dp"
+            android:layout_marginBottom="17dp"
+            android:src="@drawable/ic_back" />
+    </RelativeLayout>
+
+
+    <EditText
+        android:id="@+id/userEmail"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:hint="Email"
+        android:background="@drawable/edit_text_bg"
+        android:textSize="25sp"
+        android:fontFamily="@font/muli_semibold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/userPasswd"
+        app:layout_constraintVertical_bias="0.063" />
+
+    <EditText
+        android:id="@+id/userOrg"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:hint="Organization"
+        android:fontFamily="@font/muli_semibold"
+        android:textSize="25sp"
+        android:background="@drawable/edit_text_bg"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/userEmail"
+        app:layout_constraintVertical_bias="0.074" />
+
+    <EditText
+        android:id="@+id/userIncome"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:hint="Income"
+        android:background="@drawable/edit_text_bg"
+        android:fontFamily="@font/muli_semibold"
+        android:textSize="25sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/userOrg"
+        app:layout_constraintVertical_bias="0.116" />
+
+    <EditText
+        android:id="@+id/userPercent"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/muli_semibold"
+        android:hint="percent"
+        android:textSize="25sp"
+        android:background="@drawable/edit_text_bg"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.056"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/userIncome"
+        app:layout_constraintVertical_bias="0.166" />
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="139dp"
+        android:layout_height="113dp"
+        android:src="@drawable/profile"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <EditText
+        android:id="@+id/userName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:text="Your name"
+        android:fontFamily="@font/muli_semibold"
+        android:background="@drawable/edit_text_bg"
+        android:textAlignment="center"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView3"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <EditText
+        android:id="@+id/userPhone"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/edit_text_bg"
+        android:fontFamily="@font/muli_semibold"
+        android:hint="Phone No"
+        android:textSize="25sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/userName"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <EditText
+        android:id="@+id/userPasswd"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:fontFamily="@font/muli_semibold"
+
+        android:hint="password"
+        android:background="@drawable/edit_text_bg"
+        android:inputType="textPassword"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/userPhone"
+        app:layout_constraintVertical_bias="0.053" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout4"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/muli_semibold"
+
+        android:orientation="vertical"
+        android:padding="10dip"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.912"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/userIncome"
+        app:layout_constraintVertical_bias="0.14">
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/muli_semibold"
+
+            android:layout_marginTop="10dip"
+            android:layout_marginBottom="5dp"
+            android:text="Field:"
+            android:textSize="20sp" />
+
+        <Spinner
+            android:id="@+id/userField"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btn_stud_update"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="7dp"
+        android:background="@drawable/btn_primary"
+
+        android:fontFamily="@font/muli_semibold"
+        android:text="Update"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout4"
+        app:layout_constraintVertical_bias="0.131" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="110dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:fontFamily="@font/muli_semibold"
+
+        android:text="Phone"
+        android:textColor="@color/colorPrimaryText"
+        android:textSize="25sp"
+        app:layout_constraintEnd_toStartOf="@+id/userPhone"
+        app:layout_constraintHorizontal_bias="0.313"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/userName" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/muli_semibold"
+
+        android:layout_marginTop="28dp"
+        android:text="Password"
+        android:textSize="25sp"
+        android:textColor="@color/colorPrimaryText"
+        app:layout_constraintEnd_toStartOf="@+id/userPasswd"
+        app:layout_constraintHorizontal_bias="0.238"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="110dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:fontFamily="@font/muli_semibold"
+
+        android:text="Email"
+        android:textColor="@color/colorPrimaryText"
+        android:textSize="25sp"
+        app:layout_constraintEnd_toStartOf="@+id/userEmail"
+        app:layout_constraintHorizontal_bias="0.238"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView2" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="110dp"
+        android:layout_height="wrap_content"
+        android:text="Income"
+        android:fontFamily="@font/muli_semibold"
+
+        android:textSize="25sp"
+        android:textColor="@color/colorPrimaryText"
+        app:layout_constraintBottom_toTopOf="@+id/userPercent"
+        app:layout_constraintEnd_toStartOf="@+id/userEmail"
+        app:layout_constraintHorizontal_bias="0.3"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView4" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="110dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:text="Org"
+        android:fontFamily="@font/muli_semibold"
+
+        android:textSize="25sp"
+        android:textColor="@color/colorPrimaryText"
+        app:layout_constraintEnd_toStartOf="@+id/userOrg"
+        app:layout_constraintHorizontal_bias="0.228"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView3" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

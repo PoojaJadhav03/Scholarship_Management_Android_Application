@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--  Provider List Item Design -->
+<LinearLayout
+    android:layout_height="wrap_content"
+    android:layout_width="match_parent"
+    android:orientation="horizontal"
+
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    >
+
+    <ImageView
+        android:id="@+id/text_img"
+        android:layout_width="91dp"
+        android:layout_height="110dp"
+        android:layout_margin="10dp"
+        android:src="@drawable/providerlogo2" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:orientation="vertical">
+
+
+        <TextView
+            android:id="@+id/orgName"
+            android:text="Organization Name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/muli_black"
+            android:textColor="#18206F"
+            android:textSize="24dp"
+            android:textStyle="bold"/>
+
+
+        <TextView
+            android:id="@+id/orgProviderId"
+            android:text="Provider-ID"
+            android:layout_marginLeft="10dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/muli_semibold"
+            android:textColor="#1982B5"
+            android:textSize="18dp"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:layout_marginLeft="10dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginRight="10dp"
+            android:id="@+id/orgMailid"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:textColor="#1982B5"
+            android:fontFamily="@font/muli_semibold"
+            android:text="Organization Mail-ID"
+            android:textSize="18dp"
+            android:textStyle="bold" />
+
+
+
+    </LinearLayout>
+
+
+</LinearLayout>
+
+
+
+
+
+
+
+

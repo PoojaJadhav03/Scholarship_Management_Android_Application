@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="15dp"
+    tools:context=".DisplaySingleScheme">
+
+
+    <TextView
+        android:id="@+id/sc_names"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:contentDescription="Scheme Name"
+        android:fontFamily="@font/muli_semibold"
+
+        android:ems="10"
+        android:hint="Scheme Name"
+        android:inputType="textPersonName"
+        android:selectAllOnFocus="true"
+        android:textColor="@color/colorPrimaryText"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.07" />
+
+
+    <TextView
+        android:id="@+id/sc_descs"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/muli_semibold"
+
+        android:ems="10"
+        android:hint="Scheme Description"
+        android:inputType="textPersonName"
+        android:textColor="@color/colorPrimaryText"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/sc_names"
+        app:layout_constraintVertical_bias="0.073" />
+
+    <TextView
+        android:id="@+id/orgs"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/muli_semibold"
+
+        android:ems="10"
+        android:hint="Organization"
+        android:inputType="textPersonName"
+        android:textColor="@color/colorPrimaryText"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/sc_descs"
+        app:layout_constraintVertical_bias="0.1" />
+
+    <TextView
+        android:id="@+id/org_links"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/muli_semibold"
+
+        android:layout_marginTop="52dp"
+        android:ems="10"
+        android:hint="Organization link"
+        android:inputType="textPersonName"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/orgs"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/percents"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="48dp"
+        android:text="Percentage:"
+        android:fontFamily="@font/muli_semibold"
+
+        android:textColor="@color/colorPrimaryText"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/org_links" />
+
+    <TextView
+        android:id="@+id/incomes"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:fontFamily="@font/muli_semibold"
+
+        android:text="Income category Requirement:"
+        android:textColor="@color/colorPrimaryText"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/percents" />
+
+    <TextView
+        android:id="@+id/fields"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:layout_marginLeft="4dp"
+        android:layout_marginTop="45dp"
+        android:fontFamily="@font/muli_semibold"
+
+        android:text="Field:"
+        android:textColor="@color/colorPrimaryText"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/incomes"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <Button
+        android:id="@+id/btn_apply"
+        android:layout_width="170dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/btn_primary"
+        android:fontFamily="@font/muli_semibold"
+
+        android:padding="10dp"
+        android:text="APPLY"
+        android:textColor="#FFFFFF"
+        android:textSize="25dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.888" />
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="353dp"
+        android:layout_height="55dp"
+        android:layout_marginBottom="4dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/ic_lower_darkblue"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent" />
+    <!--ImageView
+
+        android:id="@+id/imagview2"
+        android:layout_width="415dp"
+        android:layout_height="107dp"
+         /-->
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

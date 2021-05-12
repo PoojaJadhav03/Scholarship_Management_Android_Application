@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SecondPage">
+
+
+    <ImageView
+        android:id="@+id/statme"
+        android:layout_width="405dp"
+        android:layout_height="71dp"
+        android:layout_marginTop="4dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/ic_upper_dkblue"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:gravity="center_vertical"
+        android:orientation="vertical"
+        android:paddingStart="32dp"
+        android:paddingEnd="32dp"
+        app:layout_constraintBottom_toTopOf="@id/imagview2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0">
+
+        <TextView
+            style="@style/TextAppearance.AppCompat.Title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/muli_black"
+
+            android:text="Select Your Role "
+            android:textColor="@color/colorPrimaryText" />
+
+        <Button
+            android:id="@+id/btnregrstudent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/muli_semibold"
+
+            android:layout_marginTop="45dp"
+            android:background="@drawable/btn_primary"
+            android:text="STUDENT"
+            android:textColor="#FFFFFF" />
+        <Button
+            android:id="@+id/btnregrprovider"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/muli_semibold"
+
+            android:layout_marginTop="45dp"
+            android:background="@drawable/btn_primary"
+            android:text="PROVIDER"
+            android:textColor="#FFFFFF" />
+
+
+        <Button
+            android:id="@+id/btnregradmin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/muli_semibold"
+
+            android:layout_marginTop="45dp"
+            android:background="@drawable/btn_primary"
+            android:text="ADMIN"
+            android:textColor="#FFFFFF" />
+
+
+
+
+    </LinearLayout>
+
+
+
+
+    <ImageView
+
+        android:id="@+id/imagview2"
+        android:layout_width="415dp"
+        android:layout_height="107dp"
+        android:layout_marginBottom="4dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/ic_lower_darkblue"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

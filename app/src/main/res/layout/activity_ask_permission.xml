@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AskPermission">
+
+
+    <ImageView
+        android:id="@+id/statme"
+        android:layout_width="507dp"
+        android:layout_height="79dp"
+        android:layout_marginTop="4dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/ic_upper_dkblue"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:gravity="center_vertical"
+        android:orientation="vertical"
+        android:paddingStart="32dp"
+        android:paddingEnd="32dp"
+        app:layout_constraintBottom_toTopOf="@id/imagview2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+
+        <!--TextView
+            android:text="Admin Permission"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorPrimaryText"
+            android:id="@+id/texLoginHeader"
+            style="@style/TextAppearance.AppCompat.Headline"
+            android:layout_marginTop="8dp"
+            android:maxEms="20"/-->
+
+
+        <ImageView
+            android:id="@+id/text_img"
+            android:layout_width="150dp"
+            android:layout_height="101dp"
+            android:layout_marginTop="32dp"
+            android:layout_margin="10dp"
+            android:src="@drawable/providerlogo2"
+            />
+
+
+        <TextView
+            android:id="@+id/askorgName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="13dp"
+            android:fontFamily="@font/muli_black"
+
+            android:text="Organization Name"
+            android:textColor="#18206F"
+            android:textSize="24dp"
+            android:textStyle="bold"
+
+            />
+
+        <TextView
+            android:id="@+id/askorgProviderId"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:fontFamily="@font/muli_semibold"
+
+            android:text="Provider-ID"
+            android:textColor="@color/colorPrimary"
+            android:textSize="18dp"
+            android:textStyle="bold"
+
+
+            />
+
+        <TextView
+            android:id="@+id/askorgMailid"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="Organization Mail-ID"
+            android:fontFamily="@font/muli_semibold"
+
+            android:textColor="#1982B5"
+            android:textSize="24dp"
+            android:textStyle="bold"
+
+            />
+        <Button
+            android:id="@+id/request"
+            android:layout_width="204dp"
+            android:layout_height="78dp"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/btn_primary"
+            android:fontFamily="@font/muli_semibold"
+
+            android:text="ACCEPT REQUEST"
+            android:textColor="@color/white"
+
+            />
+
+
+        <Button
+            android:id="@+id/denied"
+            android:layout_width="204dp"
+            android:layout_height="78dp"
+            android:layout_marginTop="40dp"
+            android:background="@drawable/btn_primary"
+            android:fontFamily="@font/muli_semibold"
+            android:text="REJECT REQUEST"
+            android:textColor="@color/white">
+
+        </Button>
+
+
+    </LinearLayout>
+
+
+    <ImageView
+        android:id="@+id/imagview2"
+        android:layout_width="510dp"
+        android:layout_height="103dp"
+        android:layout_marginBottom="4dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/ic_lower_darkblue"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent" />
+
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

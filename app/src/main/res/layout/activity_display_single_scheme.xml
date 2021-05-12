@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="15dp"
+    tools:context=".DisplaySingleScheme">
+
+
+    <EditText
+        android:id="@+id/sc_named"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:contentDescription="Scheme Name"
+        android:fontFamily="@font/muli_semibold"
+
+        android:ems="10"
+        android:hint="Scheme Name"
+        android:inputType="textPersonName"
+        android:selectAllOnFocus="true"
+        android:background="@drawable/edit_text_bg"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        android:editable="false"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.07" />
+
+    <EditText
+        android:id="@+id/sc_descd"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/muli_semibold"
+
+        android:ems="10"
+        android:hint="Scheme Description"
+        android:background="@drawable/edit_text_bg"
+        android:inputType="textPersonName"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/sc_named"
+        app:layout_constraintVertical_bias="0.042" />
+
+    <EditText
+        android:id="@+id/orgd"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/muli_semibold"
+
+        android:ems="10"
+        android:hint="Organization"
+        android:editable="false"
+        android:inputType="textPersonName"
+        android:background="@drawable/edit_text_bg"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/sc_descd"
+        app:layout_constraintVertical_bias="0.035" />
+
+    <EditText
+        android:id="@+id/org_linkd"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/muli_semibold"
+
+        android:layout_marginTop="24dp"
+        android:ems="10"
+        android:hint="Organization link"
+        android:inputType="textPersonName"
+        android:background="@drawable/edit_text_bg"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/orgd"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout4"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="4dp"
+        android:layout_marginRight="4dp"
+        android:orientation="vertical"
+        android:padding="10dip"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout2"
+        app:layout_constraintVertical_bias="0.0">
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dip"
+            android:layout_marginBottom="5dp"
+            android:fontFamily="@font/muli_semibold"
+
+            android:text="Percentage:"
+            android:textColor="@color/colorPrimaryText"
+            android:textSize="20sp" />
+
+        <Spinner
+            android:id="@+id/spinner_percentaged"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="4dp"
+        android:layout_marginRight="4dp"
+        android:orientation="vertical"
+        android:padding="10dip"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.532">
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dip"
+            android:layout_marginBottom="5dp"
+            android:fontFamily="@font/muli_semibold"
+
+            android:text="Income category Requirement:"
+            android:textColor="@color/colorPrimaryText"
+            android:textSize="20sp" />
+
+        <Spinner
+            android:id="@+id/spinner_incomed"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout3"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="4dp"
+        android:layout_marginRight="4dp"
+        android:orientation="vertical"
+        android:padding="10dip"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout4"
+        app:layout_constraintVertical_bias="0.0">
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/muli_semibold"
+
+            android:layout_marginTop="10dip"
+            android:layout_marginBottom="5dp"
+            android:text="Field:"
+            android:textColor="@color/colorPrimaryText"
+            android:textSize="20sp" />
+
+        <Spinner
+            android:id="@+id/spinner_fieldd"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btn_update"
+        android:layout_width="170dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/btn_primary"
+        android:fontFamily="@font/muli_semibold"
+
+        android:padding="10dp"
+        android:text="UPDATE"
+        android:textColor="#FFFFFF"
+        android:textSize="25dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.419"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.939" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
