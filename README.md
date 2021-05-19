@@ -46,7 +46,7 @@ Processor: Prefer faster processor according to your budget (Recommended i3 or a
 
 # How to Run App 
 
-1. Go to Second Branch "ScholarApp_v1.1" and download project 
+1. Download  all the filed except readme and output file .
 2. In your System download Android Studio and also configure JDk 
 3. Download Git any version and configure it
 4. Select Option "Import Project in android studio"
