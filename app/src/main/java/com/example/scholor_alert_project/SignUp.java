@@ -3,6 +3,7 @@ package com.example.scholor_alert_project;
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.app.ProgressDialog;
 import android.content.Intent;
 import android.os.Bundle;
 import android.text.TextUtils;
@@ -29,6 +30,7 @@ public class SignUp extends AppCompatActivity {
 
     EditText myemail,mypassword,mycpassword,myphone,myuserid;
     Button regrsignup;
+    private ProgressDialog progressDialog;
     TextView tologin;
     ImageView back;
 
@@ -38,6 +40,12 @@ public class SignUp extends AppCompatActivity {
         setContentView(R.layout.activity_sign_up);
 
         //Hooks to all xml elements in activity_sign_up.xml
+        progressDialog = new ProgressDialog(SignUp.this);
+        progressDialog.setContentView ( R.layout.loading );
+        progressDialog.setTitle ( "Please Wait" );
+        progressDialog.setMessage ( "Tips: Please Cheak your Internet or Wi-fi Connection" );
+        progressDialog.setCanceledOnTouchOutside ( false );
+        progressDialog.setCancelable(false);
 
         myemail = (EditText) findViewById(R.id.etEmailAddress);
         mypassword = (EditText) findViewById(R.id.etPassword);
@@ -156,6 +164,8 @@ public class SignUp extends AppCompatActivity {
 
 
     private void clickStudent_signup() {
+
+        progressDialog.show();
         String useridstudent = myuserid.getText().toString();
         String emailstudent = myemail.getText().toString();
         String passstudent = mypassword.getText().toString();
@@ -185,6 +195,7 @@ public class SignUp extends AppCompatActivity {
                                                @Override
                                                public void onComplete(@NonNull Task<Void> task) {
                                                    Log.i("ookkn", "completed");
+                                                   progressDialog.dismiss();
                                                    Toast.makeText(SignUp.this, "Your Account Created", Toast.LENGTH_SHORT).show();
                                                }
                                            }

@@ -71,7 +71,8 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:fontFamily="@font/muli_semibold"
-
+        android:linksClickable="true"
+        android:autoLink="web"
         android:layout_marginTop="52dp"
         android:ems="10"
         android:hint="Organization link"

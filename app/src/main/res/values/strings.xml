@@ -5,4 +5,5 @@
     <string name="title_activity_student">StudentActivity</string>
     <string name="tab_text_1">Eligible Schemes</string>
     <string name="tab_text_2">All Schemes</string>
+    <string name="we_have_proposed_a_system_through_which_our_application_can_solve_most_of_these_issues_it_makes_a_student_capable_enough_to_know_exact_information_of_a_scholarship_along_with_all_details_it_also_makes_the_makes_the_process_much_simpler_also_provider_can_add_different_schemes_and_student_can_apply_for_particular_schemes_our_project_name_is_scholarship_alert">We have proposed a system through which our application can solve most of these issues. It makes a student capable enough to know exact information of a scholarship along with all details.Our project name is “Scholarship Alert ”.</string>
 </resources>

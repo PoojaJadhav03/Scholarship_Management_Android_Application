@@ -17,6 +17,13 @@
                    1) Student 
                    2) Provider
                    3) Admin
+		   
+## 📸 Screenshots
+
+||||||
+|:----------------------------------------:|:-----------------------------------------:|:-----------------------------------------:|:-----------------------------------------:|:-----------------------------------------: |
+| ![Imgur](Demo/1.jpeg) | ![Imgur](Demo/2.jpeg) | ![Imgur](Demo/6_loginFailed.jpeg) | ![Imgur](Demo/12_ApproveReq.jpeg) | ![Imgur](Demo/15_ProviderprofileUpdate.jpeg) |
+| ![Imgur](Demo/16_AddSchemeProvider.jpeg) | ![Imgur](Demo/17_AddScheme2.jpeg) | ![Imgur](Demo/25_SchemeApplicationOpeningInBrowser.jpeg) | ![Imgur](Demo/3_Role.jpeg) | ![Imgur](Demo/22_UpdateProfile_Student.jpeg) |
 
 # SYSTEM REQUIREMENTS 
 
