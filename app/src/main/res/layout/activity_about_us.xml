@@ -56,7 +56,7 @@
         android:layout_marginEnd="16dp"
         android:layout_marginRight="16dp"
         android:layout_marginBottom="167dp"
-        android:text="We have proposed a system through which our application can solve most of these issues. It makes a student capable enough to know exact information of a scholarship along with all details. It also makes the makes the process much simpler.Also Provider can add different schemes and student can apply for  particular schemes , our project name is “Scholarship Alert ”."
+        android:text="@string/we_have_proposed_a_system_through_which_our_application_can_solve_most_of_these_issues_it_makes_a_student_capable_enough_to_know_exact_information_of_a_scholarship_along_with_all_details_it_also_makes_the_makes_the_process_much_simpler_also_provider_can_add_different_schemes_and_student_can_apply_for_particular_schemes_our_project_name_is_scholarship_alert"
         android:textColor="#3949AB"
         android:textSize="20sp"
         app:layout_constraintBottom_toBottomOf="parent"

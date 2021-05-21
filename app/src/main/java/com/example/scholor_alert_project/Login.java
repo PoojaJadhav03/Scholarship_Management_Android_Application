@@ -3,6 +3,7 @@ package com.example.scholor_alert_project;
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.app.ProgressDialog;
 import android.content.Intent;
 import android.os.Bundle;
 import android.text.TextUtils;
@@ -25,6 +26,7 @@ public class Login extends AppCompatActivity {
 
     EditText login_myuserid,login_pass;
     Button stud_Login;
+    private ProgressDialog progressDialog;
     ImageView back;
   //  private  DatabaseReference ref;
   //  private  String parentbd ="student";
@@ -36,6 +38,12 @@ public class Login extends AppCompatActivity {
       //  getSupportActionBar().setDisplayHomeAsUpEnabled(true);
 
         login_myuserid = findViewById(R.id.login_userid);
+        progressDialog = new ProgressDialog(Login.this);
+        progressDialog.setContentView ( R.layout.loading );
+        progressDialog.setTitle ( "Please Wait" );
+        progressDialog.setMessage ( "Tips: Please Cheak your Internet or Wi-fi Connection" );
+        progressDialog.setCanceledOnTouchOutside ( false );
+        progressDialog.setCancelable(false);
         login_pass = findViewById(R.id.loginPassword);
         stud_Login = findViewById(R.id.btnToLogin);
         TextView gotoSignup = (TextView) findViewById(R.id.textTo_SignUp);
@@ -105,6 +113,8 @@ public class Login extends AppCompatActivity {
 
    public void isUser()
     {
+
+        progressDialog.show();
         final String studentEnteruserid = login_myuserid.getText().toString();
         final String studentEnterpass = login_pass. getText().toString();
 
@@ -140,15 +150,18 @@ public class Login extends AppCompatActivity {
                                      dashboard.putExtra("id",id);   System.out.println(id);
 
 
+                                     progressDialog.dismiss();
                                          startActivity(dashboard);
                                          finish();
 
                                  }else
                                  {
+                                     progressDialog.dismiss();
                                      Toast.makeText(getApplicationContext(),"Login Failed",Toast.LENGTH_SHORT).show();
                                  }
                             }else
                             {
+                                progressDialog.dismiss();
                                 Toast.makeText(getApplicationContext(),"Login Failed",Toast.LENGTH_SHORT).show();
                             }
                         }
